@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changecontent() {
+        var h2DomElement = document.getElementById("title");
+        var buttonDomElement = document.querySelector("button");
+
+        h2DomElement.innerText = "Document Object Model";
+        buttonDomElement.innerText = "Javascript Dom Concept";
+
+        for (let x in h2DomElement) {
+          //100
+          console.log(x);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="title">DOM</h2>
+    <button onclick="changecontent()">Click Me</button>
+  </body>
+</html>
